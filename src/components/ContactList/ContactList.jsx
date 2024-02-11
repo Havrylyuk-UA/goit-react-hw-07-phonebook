@@ -8,13 +8,13 @@ const ContactList = () => {
   const filteredContacts = useSelector(selectVisibleContacts);
 
   return (
-    <ul>
+    <ol>
       {filteredContacts.map(({ id, name, phone, createdAt }) => {
         return (
           <ContactListItem key={createdAt} name={name} number={phone} id={id} />
         );
       })}
-    </ul>
+    </ol>
   );
 };
 
