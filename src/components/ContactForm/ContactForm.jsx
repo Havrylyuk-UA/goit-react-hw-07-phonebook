@@ -18,7 +18,7 @@ const ContactForm = () => {
     const name = form.elements.name.value;
     const phone = form.elements.number.value;
 
-    if (contacts && contacts.some(item => item.name === name)) {
+    if (contacts.contacts && contacts.some(item => item.name === name)) {
       return alert(`${name} is already in contact!`);
     }
 
